@@ -1,8 +1,6 @@
 from django.db import models
 from usuario.models import Usuario
 from django.utils import timezone
-# Importe Cliente do seu próprio aplicativo 'cliente' se for necessário
-# Se a classe Tecnico usar Cliente, descomente a linha abaixo:
 # from cliente.models import Cliente 
 
 # Create your models here.
@@ -29,5 +27,5 @@ class Tecnico(Usuario):
         self.save()
 
     def avaliar_cliente(self, cliente, nota, comentario=''):
-        # Se Cliente for importado acima, este método funcionará
+
         print(f'Técnico {self.nome} avaliou cliente {cliente.nome} com nota {nota}. Comentário: {comentario}')
