@@ -1,12 +1,12 @@
 from django.db import models
-from usuario.models import Usuario
+from usuario.models import Usuario, Tecnico
 
 class Cliente(Usuario):
     endereco = models.CharField('Endereço', max_length=100)
 
     class Meta:
         verbose_name = 'Cliente'
-        verbose_name_plural = 'Clientes'
+        verbose_name_plural = 'Clientes'   
 
     def cadastrar(self):
         print(f'Cliente {self.nome} cadastrado com sucesso.')
