@@ -5,3 +5,5 @@ arcondapp/__pycache__/*
 /apps/cliente/migrations/*
 /apps/endereco/__pycache__/*
 /apps/endereco/migrations/*
+/apps/servico/__pycache__/*
+/apps/servico/migrations/*
