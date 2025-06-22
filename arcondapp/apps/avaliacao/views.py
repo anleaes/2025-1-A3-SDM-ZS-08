@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Endereco
+from .models import Avaliacao
 from rest_framework import viewsets
-from .serializer import EnderecoSerializer
+from .serializer import AvaliacaoSerializer
 
 # Create your views here.
-class EnderecoViewSet(viewsets.ModelViewSet):
-    queryset = Endereco.objects.all()
-    serializer_class = EnderecoSerializer  
+class AvaliacaoViewSet(viewsets.ModelViewSet):
+    queryset = Avaliacao.objects.all()
+    serializer_class = AvaliacaoSerializer  
