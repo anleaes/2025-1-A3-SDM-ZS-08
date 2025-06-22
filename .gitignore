@@ -3,7 +3,17 @@ arcondapp/__pycache__/*
 /apps/usuario/migrations/*
 /apps/cliente/__pycache__/*
 /apps/cliente/migrations/*
+/apps/tecnico/__pycache__/*
+/apps/tecnico/migrations/*
 /apps/endereco/__pycache__/*
 /apps/endereco/migrations/*
 /apps/servico/__pycache__/*
 /apps/servico/migrations/*
+/apps/pagamento/__pycache__/*
+/apps/pagamento/migrations/*
+/apps/notificacao/__pycache__/*
+/apps/notificacao/migrations/*
+/apps/avaliacao/__pycache__/*
+/apps/avaliacao/migrations/*
+/apps/tecnicoEspecialidade/__pycache__/*
+/apps/tecnicoEspecialidade/migrations/*
