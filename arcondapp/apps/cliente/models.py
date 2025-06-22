@@ -1,3 +1,6 @@
+from django.db import models
+from usuario.models import Usuario
+
 class Cliente(Usuario):
     endereco = models.CharField('Endereço', max_length=100)
 
