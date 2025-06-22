@@ -1,4 +1,7 @@
 from django.db import models
+from cliente.models import Cliente
+from tecnico.models import Tecnico
+from django.utils import timezone
 
 # Create your models here.
 class Notificacao(models.Model):
