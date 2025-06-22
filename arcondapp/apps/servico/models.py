@@ -1,4 +1,6 @@
 from django.db import models
+from usuario.models import Cliente, Tecnico
+from django.utils import timezone
 
 # Create your models here.
 
