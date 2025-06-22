@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Pagamento
+from .models import Notificacao
 from rest_framework import viewsets
-from .serializer import PagamentoSerializer
+from .serializer import NotificacaoSerializer
 
 # Create your views here.
-class PagamentoViewSet(viewsets.ModelViewSet):
-    queryset = Pagamento.objects.all()
-    serializer_class = PagamentoSerializer  
+class NotificacaoViewSet(viewsets.ModelViewSet):
+    queryset = Notificacao.objects.all()
+    serializer_class = NotificacaoSerializer  
