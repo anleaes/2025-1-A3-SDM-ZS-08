@@ -1,4 +1,6 @@
 from django.db import models
+from servico.models import Servico
+from django.utils import timezone
 
 # Create your models here.
 class Pagamento(models.Model):
