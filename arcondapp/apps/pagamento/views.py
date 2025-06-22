@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Servico
+from .models import Pagamento
 from rest_framework import viewsets
-from .serializer import ServicoSerializer
+from .serializer import PagamentoSerializer
 
 # Create your views here.
-class ServicoViewSet(viewsets.ModelViewSet):
-    queryset = Servico.objects.all()
-    serializer_class = ServicoSerializer  
+class PagamentoViewSet(viewsets.ModelViewSet):
+    queryset = Pagamento.objects.all()
+    serializer_class = PagamentoSerializer  
