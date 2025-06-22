@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import Tecnico
+from .models import TecnicoEspecialidade
 from rest_framework import viewsets
-from .serializer import TecnicoSerializer
+from .serializer import TecnicoEspecialideSerializer
 
 # Create your views here.
 
-class TecnicoViewSet(viewsets.ModelViewSet):
-    queryset = Tecnico.objects.all()
-    serializer_class = TecnicoSerializer  
+class TecnicoEspecialidadeViewSet(viewsets.ModelViewSet):
+    queryset = TecnicoEspecialidade.objects.all()
+    serializer_class = TecnicoEspecialideSerializer 
