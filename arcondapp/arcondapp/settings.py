@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     "tecnico.apps.TecnicoConfig",
     "avaliacao.apps.AvaliacaoConfig",
     "notificacao.apps.NotificacaoConfig",
-    "tecnicoEspecialidade.apps.tecnicoespecialidadeConfig",
+    "tecnicoEspecialidade.apps.tecnicoEspecialidadeConfig",
 ]
 
 MIDDLEWARE = [
