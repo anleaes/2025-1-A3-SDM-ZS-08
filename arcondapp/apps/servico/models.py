@@ -1,5 +1,6 @@
 from django.db import models
 from cliente.models import Cliente
+from tecnico.models import Tecnico
 from django.utils import timezone
 
 # Create your models here.
@@ -24,7 +25,7 @@ class Servico(models.Model):
     data_solicitacao = models.DateTimeField(default=timezone.now)
     data_execucao = models.DateTimeField(null=True, blank=True)
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, related_name='servicos')
-    tecnico = models.ForeignKey('Tecnico', on_delete=models.SET_NULL, null=True, blank=True, related_name='servicos')
+    tecnico = models.ForeignKey(Tecnico, on_delete=models.SET_NULL, null=True, blank=True, related_name='servicos')
 
     def atualizar_status(self, novo_status):
         self.status = novo_status
