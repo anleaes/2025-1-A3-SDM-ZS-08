@@ -6,7 +6,7 @@ from django.apps import apps # Esta importação não parece ser usada aqui, pod
 class Usuario(models.Model):
     nome = models.CharField('Nome', max_length=50)
     email = models.EmailField('E-mail', unique=True)
-    telefone = models.CharField('Telefone', max_length=20)
+    telefone = models.CharField('Telefone', min_length=11)
     
 
     class Meta:
