@@ -3,7 +3,7 @@ from tecnico.models import Tecnico
 
 # Create your models here.
 class TecnicoEspecialidade(models.Model):
-    tecnico = models.ForeignKey(Tecnico, on_delete=models.CASCADE, related_name='especialidades')
+    tecnico = models.ForeignKey(Tecnico, on_delete=models.CASCADE, related_name='especialidade')
     especialidade = models.CharField(max_length=500)
 
     class Meta:
