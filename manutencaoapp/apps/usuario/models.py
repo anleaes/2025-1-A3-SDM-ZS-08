@@ -4,8 +4,7 @@ from django.db import models
 
 class Usuario(models.Model):
     nome = models.CharField('nome', max_length=100) 
-    email = models.EmailField('E-mail', unique=True, null=False, blank=False) 
-    cpf = models.CharField(max_length=14, unique=True,)  
+    email = models.EmailField('E-mail', unique=True, null=False, blank=False)  
     telefone = models.CharField('Telefone celular', max_length=20)
 
     class Meta:

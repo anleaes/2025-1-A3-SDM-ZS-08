@@ -2,7 +2,7 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 
-app_name = 'usuarios'
+app_name = 'usuario'
 
 router = routers.DefaultRouter()
 router.register('', views.UsuarioViewSet, basename='usuarios')
