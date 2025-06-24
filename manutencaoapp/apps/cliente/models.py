@@ -9,8 +9,8 @@ class Cliente(models.Model):
     telefone = models.CharField('Telefone celular', max_length=20)
 
     class Meta:
-        verbose_name = 'Usuario'
-        verbose_name_plural = 'Usuarios'
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Cliente'
         ordering =['id']
 
         def __str__(self):
