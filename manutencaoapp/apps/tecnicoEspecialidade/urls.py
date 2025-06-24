@@ -10,12 +10,3 @@ router.register('', views.TecnicoEspecialidadeViewSet, basename='tecnicoEspecial
 urlpatterns = [
     path('', include(router.urls) )
 ]
-
-app_name = 'Especialidade'
-
-router = routers.DefaultRouter()
-router.register('', views.TecnicoEspecialidadeViewSet, basename='especialidade')
-
-urlpatterns = [
-    path('', include(router.urls) )
-]
