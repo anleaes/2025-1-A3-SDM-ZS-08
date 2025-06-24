@@ -24,5 +24,5 @@ class Servico(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='Pendente')
     data_solicitacao = models.DateTimeField(default=timezone.now)
     data_execucao = models.DateTimeField(null=True, blank=True)
-    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, related_name='servicos')
-    tecnico = models.ForeignKey(Tecnico, on_delete=models.SET_NULL, null=True, blank=True, related_name='servicos')
+    cliente = models.ForeignKey('cliente.Cliente', on_delete=models.CASCADE, related_name='servicos')
+    tecnico = models.ForeignKey('tecnico.Tecnico', on_delete=models.SET_NULL, null=True, blank=True, related_name='servicos')
