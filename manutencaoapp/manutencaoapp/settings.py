@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'avaliacao.apps.AvaliacaoConfig',
     'pagamento.apps.PagamentoConfig',
     'tecnicoEspecialidade.apps.TecnicoespecialidadeConfig',
-    'especialidade.apps.EspecialidadeConfig',
 ]
 
 MIDDLEWARE = [
